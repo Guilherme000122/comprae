@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compraê</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Compraê</div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <div class="menu">
+            <button type="button" id="btn-sobre">Sobre ▾</button>
+
+            <div id="menu-vertical-sobre" class="submenu">
+                <a href="#empresa">Empresa</a>
+                <a href="#clientes">Clientes</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button type="button" id="btn-contato">Contato ▾</button>
+
+            <div id="menu-vertical-contato" class="submenu">
+                <a href="#" id="linkTelefone">Telefones</a>
+                <a href="mailto:contato@comprae.com">Email</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="inicio-main">
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Compraê</h1>
+
+            <p>
+                Compre, venda e encontre produtos de forma fácil e rápida.
+            </p>
+
+            <div class="hero-botoes">
+                <a href="cadastro.html" class="botao">
+                    Criar minha conta
+                </a>
+
+                <a href="login.html" class="botao">
+                    Entrar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="empresa" class="secao">
+        <h2>Sobre a empresa</h2>
+
+        <p>
+            O Compraê é uma plataforma para comprar e vender produtos de forma simples.
+        </p>
+    </section>
+
+    <section id="clientes" class="secao">
+        <h2>Nossos clientes</h2>
+
+        <p>
+            Qualquer pessoa pode encontrar produtos e publicar seus próprios anúncios.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p id="dataAtual"></p>
+    <p>Todos os direitos reservados.</p>
+    <p>Desenvolvido por Guilherme S.,GN</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

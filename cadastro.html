@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Compraê</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Compraê</div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <div class="menu">
+            <button type="button" id="btn-sobre">Sobre ▾</button>
+            <div id="menu-vertical-sobre" class="submenu">
+                <a href="index.html#empresa">Empresa</a>
+                <a href="index.html#clientes">Clientes</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button type="button" id="btn-contato">Contato ▾</button>
+            <div id="menu-vertical-contato" class="submenu">
+                <a href="#" id="linkTelefone">Telefones</a>
+                <a href="mailto:contato@comprae.com">Email</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="pagina-form">
+
+    <section class="formulario">
+
+        <h1>Criar conta</h1>
+
+        <p>Cadastre-se gratuitamente no Compraê.</p>
+
+        <form id="formCadastro">
+
+            <input type="text" id="nomeCadastro" placeholder="Nome completo" required>
+
+            <input type="text" id="cpfCadastro" placeholder="CPF" required>
+
+            <input type="text" id="enderecoCadastro" placeholder="Endereço" required>
+
+            <input type="email" id="emailCadastro" placeholder="Email" required>
+
+            <input type="password" id="senhaCadastro" placeholder="Senha" required>
+
+            <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required>
+
+            <button type="submit" class="botao">
+                Criar conta
+            </button>
+
+        </form>
+
+        <p id="mensagemCadastro"></p>
+
+        <p>
+            Já possui uma conta?
+            <a href="login.html">Entrar</a>
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p id="dataAtual"></p>
+    <p>Todos os direitos reservados.</p>
+    <p>Desenvolvido por Guilherme S.,GN</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Compraê</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Compraê</div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">Cadastro</a>
+            <div class="menu">
+                <button id="btnSobre">Sobre ▾</button>
+                <div class="submenu" id="menuSobre">
+                    <a href="index.html#empresa">Empresa</a>
+                    <a href="index.html#clientes">Clientes</a>
+                </div>
+            </div>
+            <div class="menu">
+                <button id="btnContato">Contato ▾</button>
+                <div class="submenu" id="menuContato">
+                    <a href="#" id="telefone">Telefones</a>
+                    <a href="mailto:contato@comprae.com">Email</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pagina-form">
+        <section class="formulario">
+            <h1>Entrar</h1>
+            <p>Entre na sua conta do Compraê.</p>
+
+            <form id="formLogin">
+                <input type="email" id="emailLogin" placeholder="Seu email" required>
+                <input type="password" id="senhaLogin" placeholder="Sua senha" required>
+                <button type="submit" class="botao">Entrar</button>
+            </form>
+
+            <p id="mensagemLogin"></p>
+            <p>Ainda não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p id="dataAtual"></p>
+        <p>Todos os direitos reservados.</p>
+        <p>Desenvolvido por Guilherme S.,GN</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

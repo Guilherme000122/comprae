@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compraê - Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Compraê</div>
+        <nav>
+            <a href="site.html">Produtos</a>
+            <a href="index.html">Início</a>
+
+            <div class="menu">
+                <button id="btnSobre">Sobre ▾</button>
+                <div id="menuSobre" class="submenu">
+                    <a href="index.html#empresa">Empresa</a>
+                    <a href="index.html#clientes">Clientes</a>
+                </div>
+            </div>
+
+            <div class="menu">
+                <button id="btnContato">Contato ▾</button>
+                <div id="menuContato" class="submenu">
+                    <a href="#" id="telefone">Telefones</a>
+                    <a href="mailto:contato@comprae.com">Email</a>
+                </div>
+            </div>
+
+            <button id="botaoSair" class="botao-sair">Sair</button>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section class="boas-vindas">
+            <h1>Olá, <span id="nomeUsuario"></span>!</h1>
+            <p>Encontre produtos ou publique seu próprio anúncio.</p>
+        </section>
+
+        <section class="formulario">
+            <h2>Publicar produto</h2>
+
+            <form id="formProduto">
+                <input type="text" id="nomeProduto" placeholder="Nome do produto" required>
+
+                <input type="number" id="precoProduto" placeholder="Preço" step="0.01" min="0" required>
+
+                <select id="tipoProduto" required>
+                    <option value="">Escolha uma categoria</option>
+                    <option value="Eletrônicos">Eletrônicos</option>
+                    <option value="Celulares">Celulares</option>
+                    <option value="Móveis">Móveis</option>
+                    <option value="Esportes">Esportes</option>
+                    <option value="Games">Games</option>
+                    <option value="Roupas">Roupas</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <input type="file" id="imagemProduto" accept="image/*" required>
+
+                <button type="submit" class="botao">Publicar produto</button>
+            </form>
+
+            <p id="mensagemProduto"></p>
+        </section>
+
+        <section class="produtos">
+            <h2>Produtos anunciados</h2>
+
+            <input type="search" id="buscaProdutos" placeholder="Pesquisar produto...">
+
+            <div id="listaProdutos" class="lista-produtos"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="dataAtual"></p>
+        <p>Todos os direitos reservados.</p>
+        <p>Desenvolvido por Guilherme S., GN</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
